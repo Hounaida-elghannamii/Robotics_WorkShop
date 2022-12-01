@@ -1,0 +1,75 @@
+// defines buttonPins
+const int buttonPin2 = 2;
+const int buttonPin3 = 3;
+const int buttonPin4 = 4;
+const int buttonPin5 = 5;
+const int buttonPin6 = 6;
+const int buttonPin7 = 7;
+const int buttonPin8 = 8;
+
+const int buzzer =  13;      // This is the pin connected to the buzzer
+
+// defines the states of the buttons
+int buttonState2 = 0;
+int buttonState3 = 0;
+int buttonState4 = 0;
+int buttonState5 = 0;
+int buttonState6 = 0;
+int buttonState7 = 0;
+int buttonState8 = 0;
+
+void setup() {
+  // Set buzzer-pin as output:
+  pinMode(buzzer, OUTPUT);
+  // Set button-pins as input:
+  pinMode(buttonPin2, INPUT);
+  pinMode(buttonPin3, INPUT);
+  pinMode(buttonPin4, INPUT);
+  pinMode(buttonPin5, INPUT);
+  pinMode(buttonPin6, INPUT);
+  pinMode(buttonPin7, INPUT);
+  pinMode(buttonPin8, INPUT);
+
+}
+
+void loop() {
+  // reads button value:
+  buttonState2 = digitalRead(buttonPin2);
+  buttonState3 = digitalRead(buttonPin3);
+  buttonState4 = digitalRead(buttonPin4);
+  buttonState5 = digitalRead(buttonPin5);
+  buttonState6 = digitalRead(buttonPin6);
+  buttonState7 = digitalRead(buttonPin7);
+  buttonState8 = digitalRead(buttonPin8);
+
+  // Plays a specific frequency depending on which button are pressed
+  if (buttonState2 == HIGH) {
+    tone(buzzer, 440.000);  // sends a frequency of 440Hz
+  }
+  else if (buttonState3 == HIGH) {
+    tone(buzzer, 391.995);
+  }
+  else if (buttonState4 == HIGH) {
+    tone(buzzer, 349.228);
+  }
+  else if (buttonState5 == HIGH) {
+    tone(buzzer, 329.628);
+  }
+  else if (buttonState6 == HIGH) {
+    tone(buzzer, 293.665);
+  }
+  else if (buttonState7 == HIGH) {
+    tone(buzzer, 261.626);
+  }
+  else if (buttonState8 == HIGH) {
+    
+    // Plays a series of tones when the last button is pressed
+
+    tone(buzzer, 329.628);
+   
+  } 
+  else {
+    noTone(buzzer); // stops sending frequencies to the buzzer
+  }
+  
+}

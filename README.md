@@ -8,5 +8,5 @@
 
 <img src="https://image.made-in-china.com/155f0j00WOtiDSwFrYge/61-Key-Piano-Keyboard-with-USB-MIDI-Lighting-System-and-Teaching-APP.jpg" width="400">
 <h1>Robot motion system</h1>
-<p>With Mobile application,Gyroscope,Line follower</p>
+<p>With Mobile application / Gyroscope / Line follower</p>
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFUNiP4phx9xyxnkr8HnKVH_esBpIizCZUeJ31cZtHKl-BOc2ClbA0GXi3y0RCnMEXgTg&usqp=CAU" width="400">
